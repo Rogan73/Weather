@@ -1,0 +1,2 @@
+export const API_KEY = '340310fb8ed120f2296f87029d1830c3'
+export const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather' //https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
