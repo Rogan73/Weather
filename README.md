@@ -1,6 +1,10 @@
-# Forecast
+# Weather
 
-This template should help get you started developing with Vue 3 in Vite.
+Application  Vue3,  Composition API, Vite, API
+
+## Screenshot
+![App Screenshot](/screen/screen1.jpg)  
+
 
 ## Recommended IDE Setup
 
