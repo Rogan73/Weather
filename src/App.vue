@@ -42,7 +42,7 @@
 
 <script setup>
 import {ref, onMounted, computed} from 'vue'
-import {API_KEY,BASE_URL} from './constants'
+import {BASE_URL} from './constants'
 import WeatherSummary from './components/WeatherSummary.vue'
 import HighLights from './components/HighLights.vue';
 import Coords from './components/Coords.vue';
@@ -54,7 +54,7 @@ const weatherInfo = ref(null)
 const isError =computed( ()=> weatherInfo.value?.cod !==200)
 
 const getWeatger = ()=>{
-   const url = BASE_URL+'?q='+city.value+'&units=metric'+'&appid='+API_KEY
+   const url = BASE_URL+'?q='+city.value+'&units=metric'+'&appid='+import.meta.env.VITE_API_KEY
    fetch(url)
    .then( (responce) =>responce.json())
    .then( data => {
